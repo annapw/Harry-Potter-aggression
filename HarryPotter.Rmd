@@ -25,8 +25,9 @@ hp_graph <-hp_data %>%
   select(Name, book, agg.per.mention) %>%
   ggplot(aes(x=book, y=agg.per.mention)) +
   geom_col(aes(fill = Name), position = "dodge") +
-  coord_flip() +
+  coord_flip() + #swaps the x & y axes for ease of reading 
   theme_bw()
 hp_graph
 ```
 
+I believe there are rainbow ponies among us. 
